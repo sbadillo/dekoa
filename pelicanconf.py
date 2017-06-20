@@ -6,7 +6,7 @@ import os
 
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
-SITEURL = 'https://sbadillo.github.io/dekoa/'
+SITEURL = 'https://sbadillo.github.io/dekoa'
 
 print(SITENAME + ' -- ' +  AUTHOR)
 
@@ -16,16 +16,11 @@ THEME = './themes/simple-boot'
 # paths that get copied identically from content folder.
 STATIC_PATHS = ['images','extra']
 
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'es'
 
-
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
 
 # Social widget: names are used for font-awesome icons, use lowerspace
 SOCIAL = (('instagram', 'https://www.instagram.com/dekoamx/'),
@@ -34,7 +29,7 @@ SOCIAL = (('instagram', 'https://www.instagram.com/dekoamx/'),
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 
 # no feed generation for now
