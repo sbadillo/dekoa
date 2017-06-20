@@ -17,26 +17,25 @@ Instructions for theme development are in theme folder.
     
     ```
     language: python
-python:
-  - "3.5"
-sudo: required
-
-notifications:
-  email:
-    recipients:
-      email@mail.com
-    on_success: never # default: change
-    on_failure: always # default: always
-branches:
-  only:
-  - sources
-env:
-  global:
-    secure: "<paste here encryption result>"
-install:
-- pip install -r requirements.txt
-script:
-- make publish github
+    python:
+      - "3.5"
+    sudo: required
+    notifications:
+      email:
+        recipients:
+          email@email.com
+        on_success: never # default: change
+        on_failure: always # default: always
+    branches:
+      only:
+      - sources
+    env:
+      global:
+        secure: "<paste here encryption result>"
+    install:
+    - pip install -r requirements.txt
+    script:
+    - make publish github
 
     ```
 	
