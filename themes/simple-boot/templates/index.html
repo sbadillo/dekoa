@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="content">
+  {% block content_title %}
+  
+  {# Jumbotron #}
+  <div class="jumbotron jumbotron-fluid lazy" data-background="/images/pagina_de_inicio/1_jumbotron.png">
+    <div class="container text-center">
+      <h1 class="display-3" >Flexibilidad</h1>
+      <p class="lead">Crea con Dekoa los muebles que siempre has soñado.</p>
+      <!-- <a class="btn btn-md btn-secondary" href="../../components/navbar/" role="button">Más &raquo;</a> -->
+    </div>
+  </div>
+
+  {# Conoce mas... #}
+  <div class="container-fluid conoce-mas-container">
+    <div class="container">
+      <p class="conoce-mas text-center text-white">Conoce más. &raquo;</p>
+    </div>
+  </div>
+
+  {# 'Album' section Thumbnails #}
+  <div class="album container">
+    <div class="row justify-content-md-center">
+
+      <!-- Cuadro 1: Experiencia -->
+
+      <div class="col-md-6 hide-content-hover text-center px-2">
+        <a href="#">
+          <div class="box bg-box-1 hover-bright lazy" data-background="/images/pagina_de_inicio/cajas_fit.png"></div>
+          <div class="content">
+            <p class="display-4 text-white caption text-shadow">Experiencia</p>
+            <p class="text-white carousel-caption text-shadow">Conoce nuestra trayectoria.</p>            
+          </div>
+          
+        </a>
+      </div> 
+
+      <!-- Cuadro 2: Inspiracion -->
+
+      <div class="col-md-6 text-center hide-content-hover px-2">
+        <a href="#">
+          <div class="box bg-box-2 hover-bright lazy" data-background="/images/pagina_de_inicio/espejos-1.jpg"></div>
+          <div class="content">
+            <p class="display-4 text-white caption text-shadow">Inspiración</p>
+          </div>      
+        </a>
+      </div> 
+
+    </div> <!-- endrow -->
+    <div class="row">
+
+      <!-- Cuadro 3: Noticias-->
+
+      <div id="box-texto" class="col-md-3 px-2">
+        <a href="#">
+          <div class="box bg-box-3 lazy" data-background=""></div>
+          <div class="content caption">
+            <p class="h3 text-white">Visítanos en nuesto nuevo hogar!</p>
+            <p class="align-items-baseline text-white">Nueva localidad &raquo;</p>
+          </div>      
+        </a>
+      </div> 
+      
+      <!-- Cuadro 4: Importante -->
+
+      <div class="col-md-6 px-2">
+        <a href="#">
+          <div class="box bg-box-4 lazy" data-background="/images/pagina_de_inicio/decorando.jpg"></div>
+          <div class="content caption">
+            <p class="h3 text-white">Sala de Juegos</p>
+          </div>      
+          <p class="text-muted">Actualidades</p>
+        </a>
+      </div>
+
+      <!-- Cuadro 5: Instagram -->
+      <div class="col-md-3 px-2">
+        <a class="instagram-thumb" href={{ INSTAGRAM_POST }} target="_blank">
+          <div class="box bg-box-instagram"></div>
+          <div class="content caption">
+          <!-- no text content -->
+          </div>      
+        </a>
+        <p class="text-muted">Reciente en Instagram</p>
+      </div>
+
+    </div>
+  </div> <!-- finish album -->
+
+
+  <div class="container-fluid ultimos-trabajos">
+    <p class="lead">Trabajos Recientes</p>
+    {% include 'trabajos_recientes.html' %}
+  </div>
+
+  {% endblock %}
+
+  {% if articles_page.has_other_pages() %}
+  {% include 'pagination.html' %}
+  {% endif %}
+</section><!-- /#content -->
+{% endblock content %}

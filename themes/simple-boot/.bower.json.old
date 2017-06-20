@@ -1,0 +1,21 @@
+{
+  "name": "simple-boot",
+  "homepage": "https://github.com/sbadillo/dekoa",
+  "authors": [
+    "Sergio <sbadillo@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4",
+    "jquery": "^3.2.1",
+  }
+}

@@ -1,0 +1,174 @@
+// Esta es la version de _custom que se injecta a bootstrap
+// version realizada para Dekoa
+
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$bg-2:				#474e5d;			// 	just a color
+
+// custom colors
+$color-keppel:					#34afad;			// ~teal
+
+$color-red-dekoa: 			#e31d1a;			// ~rojo dekoa logo original
+$color-roman:						#db5461;			// ~rojo palido 1
+$color-burnt-sienna:    #ee6055;			// ~rojo palido 2 mas claro
+$color-river-bed:				#474e5d;			// ~obscuro-gris-azulon
+$color-aqua-island:			#a8dadc;			// ~color cielo claro
+
+
+$navbar-padding-y:	($spacer / .5);
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+  xl: 1200px // changed from original 1140px
+  );
+
+
+//random
+.bg-2 { 
+	background-color: #474e5d; /* Dark Blue */
+	color: #ffffff;
+}
+
+// Navbar stuff
+.small-logo {
+	height: 50px;
+	// opacity: 0.4;  
+}
+
+// jumbotron stuff
+
+.jumbotron.jumbotron-fluid {
+  margin-bottom:0px;
+  height: 75vh - $line-height-base; // non-optimal (try to fit all viewport)
+  // background:no-repeat url("/images/pagina_de_inicio/1_jumbotron.png");
+  background:no-repeat;
+  background-size: cover;
+  align-items:center;
+  display:flex;
+}
+
+.conoce-mas-container {
+	background-color: $color-river-bed;
+}
+
+.conoce-mas {
+	line-height: $line-height-base * 3.2;
+	display:block;
+}
+
+
+// social icons
+.fa {
+	padding: 0 $spacer/2;
+}
+
+// main album properties.
+
+.album.container {
+	padding: $spacer*3 0;
+}
+
+.album > .row {
+	margin: $spacer 0;
+}
+
+.box {
+	height:240px;
+	width:100%;
+	background-size:cover; 
+	position:relative;
+	overflow: hidden;
+}
+
+
+// imagenes en thumbnails, pagina principal
+.bg-box-1 {
+	background: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.bg-box-2 {
+	background: no-repeat;
+	// background-position: center;   //used for decorando image
+	background-position: bottom;      // used for espejos image
+}
+
+.bg-box-3 {
+	background-color: $color-red-dekoa;
+	opacity: 1;
+}
+
+.bg-box-4 {
+	background-image: no-repeat;
+	background-position: bottom;
+}
+
+.bg-box-instagram {
+	background: no-repeat;
+	background-size:cover;
+	background-image: url("/images/pagina_de_inicio/bg-instagram-dekoa.jpg");
+
+	// background-position: center;
+}
+
+.hover-bright {
+	-webkit-filter: brightness(75%);
+	-moz-filter: brightness(75%);
+	-o-filter: brightness(75%);
+	-ms-filter: brightness(75%);
+	filter: brigthness(75%);
+
+	-webkit-transition: filter 0.1s ease-in-out;
+	-moz-transition: filter 0.1s ease-in-out;
+	-ms-transition: filter 0.1s ease-in-out;
+	-o-transition: filter 0.1s ease-in-out;
+	transition: filter 0.1s ease-in-out;
+}
+
+.hover-bright:hover {
+	filter: brightness(100%);
+}
+
+//other
+.content {
+	padding-right: $spacer;
+	padding-left:$spacer;
+	width:90%;
+	z-index: 3;
+}
+
+// some text tweaks
+.caption {
+	position: absolute;
+	top: 38%; //attempts to center the caption
+	width: 90%;
+}
+
+.border {
+	border:1px solid orange;
+	z-index:9999;
+}
+
+.text-shadow {
+	text-shadow:1px 2px 3px rgba(1,1,1,0.4);
+}
+
+
+// ultimos trabajos
+
+.ultimos-trabajos {
+	padding: $spacer*2 0;
+	margin: $spacer*2 0;
+	background-color: $gray-lighter;
+	height: 400px;
+}
+
+.carousel-item {
+	max-width: 250px;
+	height:250px;
+}

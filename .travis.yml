@@ -1,0 +1,28 @@
+# instructions to compile everything with travis
+
+language: python
+python:
+  - "3.5"
+sudo: required
+
+notifications:
+  email:
+    recipients:
+      sbadillo@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
+
+branches:
+  only:
+  - source
+
+env:
+  global:
+    secure: Lt+ZnReYKnB0trYU50sU+BAAXhcpJy47GuTcMq4AvbGd9Wt0BBItYotzQYD1g6990YGyi3umRkjB7Fabyid8NCbs/+kRhqJ8Twv7QA8LUltMXhV7pJLv3Wk8yNSTJX/jUlGS8DnKlkV0v7QWDgbFjnMgl8S7n1egL+wFdAOcf2Gx9eOMOqIVcHDeJ/NmmxK63ke2dgozkynb8Hl2gYNXuwEOsLYhYuiJcjo8JRMley6Aa2M346g1jZ4UDZN9Fof2ADq0C1xIl8DJxgO6Yq3om+0kV3q7pZdwCJXCQCVfY+U34p2zWEpbgnB5RItVnmmhdiMTR+ue3h8xbJVaeTH19q+zwA+ddQYsinOmDPFy6Oj8rVHkyPELAw5gMODvUhoYXhB5co4UbGTMfZ3uQm6MvRizTrvgert0RgwbHGUE1ZpKdxAQyZwCgPQFIqYseEB+S53FDQYJh7uCWMvljaV0sUsKm74lFemL+YF72UxacTk5qs4uoSqSuYvwZT2LxAf9FPLQUjdXMcJcPUikoN1VL7F0Wjv0uPVYeCePwgVbWiHJP0VvGFCdYqDtv4G/y1skd580D9UggnbnyYutTcGSKrtBB+psQ8JKJy4UGT3Zk5oDgTm/YcvV5xUdzc/TUOvFnVJX3wzigvYVB70DyeYAZsroedlvEuxAjixfVdvwkBE=
+
+install:
+- pip install -r requirements.txt
+
+script:
+
+- make publish github
