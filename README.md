@@ -11,9 +11,8 @@ Instructions for theme development are in theme folder.
         git checkout --orphan sources
         git push -u <this repo remote address> sources
 
-2. configure travis
-
-    2.1. configuration of travis build is in .travis.yml
+2. **Configure travis**
+    2.1 configuration of travis build is in .travis.yml
     
     ```
     language: python
