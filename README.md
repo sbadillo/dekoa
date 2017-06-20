@@ -9,27 +9,18 @@ This project has two branches:
 
 This set-up will automatically build the site using Travis-ci. The build is trigered every time a push is done to the sources branch.
 
-<<<<<<< HEAD
-1. exit master branch and created an orphan 'sources' branch for project source.
-    
-    git checkout -b master
-    git checkout --orphan sources
-    git push -u <this repo remote address> sources
+1. **Create an orphan branch** 'sources' for project source.
+
+        git checkout -b master
+        git checkout --orphan sources
+        git push -u <this repo remote address> sources
 	
-2. configure travis
-=======
-1. **.gitignore some folders** not really needed by pelican:
+2. **.gitignore some folders** not really needed by pelican:
 	
         /output
 		/themes/simple-boot/node_modules
         /themes/simple-boot/bower_components
         # any other extra stuff.
-
-2. **Create an orphan branch** 'sources' for project source.
-
-        git checkout -b master
-        git checkout --orphan sources
-        git push -u <this repo remote address> sources
 
 3. **Preparation for deploying**:
 
@@ -68,7 +59,6 @@ This set-up will automatically build the site using Travis-ci. The build is trig
         - make publish github
 
         ```	
->>>>>>> e050f59cd0635bc050f359dd4e4d039ca21e9aae
 
 3. **Create a requirements.txt** file. As stated in the .travis.yml file, Travis will install these using pip:
 
