@@ -5,13 +5,14 @@ Instructions for theme development are in theme folder.
 
 ## How this was configured at first using travis and gh-pages:
 
-1. exit master branch and created an orphan 'sources' branch for project source.
+1. **Create an orphan branch** 'sources' for project source.
     
     	git checkout -b master
         git checkout --orphan sources
         git push -u <this repo remote address> sources
 
 2. **Configure travis**
+
     2.1 configuration of travis build is in .travis.yml
     
     ```
