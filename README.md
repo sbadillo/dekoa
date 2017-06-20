@@ -32,7 +32,7 @@ Instructions for theme development are in theme folder.
         notifications:
           email:
             recipients:
-              <email>@gmail.com
+              <email>@email.com
             on_success: never # default: change
             on_failure: always # default: always
         branches:
