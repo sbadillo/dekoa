@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-// var run = require('gulp-run');
 var exec = require('child_process').exec;
 var browserSync = require('browser-sync').create();
 
@@ -41,28 +40,39 @@ gulp.task('runPelican', function (cb) {
 });
 });	
 
-
-
-// Watch changes and apply all
-
+// Simple watch and apply changes task
 gulp.task('watch', function() {
 	gulp.watch(["./source/**/*.*","./templates/*.html"],	['default']);
 });
 
-// Serve, Watch and browserSync task
 
-// Static Server + watching scss/html files
+// ######################################
+// Main Serve, Watch and browserSync task
+// ######################################
+
+
+// auxiliary task to ensure browserSync runs after default is done.
+gulp.task('reload-browser', ['default'], function(){
+	// when changes arrive to output folder, refresh browser
+	browserSync.reload()
+});
+
+// main 
 gulp.task('serve', ['default'], function() {
 
+	// initialize server at localhost:3000
+	
 	browserSync.init({
 		server: "../../output"
 	});
-
-	// first, run all default tasks if sources change
-	// run also pelican
-	gulp.watch(["./source/**/*.*","./templates/*.html"],	['default']);
 	
-	// when changes arrive to output folder, refresh browser
-	gulp.watch("../../output/**/*.*").on('change', browserSync.stream());
+	// run all default tasks if sources change,
+	// then reload browser
+	
+	gulp.watch([
+		"./source/**/*.*",
+		"./templates/*.html"
+		], ['reload-browser']);
+	
 });
 

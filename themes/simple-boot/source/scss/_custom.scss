@@ -35,8 +35,8 @@ $container-max-widths: (
 
 // Navbar stuff
 .small-logo {
-	height: 50px;
-	// opacity: 0.4;  
+	height: 40px;
+	// opacity: 0.4;  // used for black logo
 }
 
 // jumbotron stuff
@@ -47,6 +47,7 @@ $container-max-widths: (
   // background:no-repeat url("/images/pagina_de_inicio/1_jumbotron.png");
   background:no-repeat;
   background-size: cover;
+  background-position: top;
   align-items:center;
   display:flex;
 }

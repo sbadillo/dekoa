@@ -10,13 +10,14 @@
   color: #ffffff; }
 
 .small-logo {
-  height: 50px; }
+  height: 40px; }
 
 .jumbotron.jumbotron-fluid {
   margin-bottom: 0px;
   height: 73.5vh;
   background: no-repeat;
   background-size: cover;
+  background-position: top;
   align-items: center;
   display: flex; }
 
