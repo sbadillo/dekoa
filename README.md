@@ -22,7 +22,7 @@ Instructions for theme development are in theme folder.
         gem install travis
         travis encrypt GH_TOKEN=<paste github token here>
     
-3.1 Create a travis configuration file .travis.yml
+3.1 Create a travis configuration file .travis.yml which tells travis how to build
     
         ```
         language: python
