@@ -10,14 +10,19 @@ Instructions for theme development are in theme folder.
         git checkout --orphan sources
         git push -u <this repo remote address> sources
 
-2. **Configure travis**
+2. **Preparation for deploying**:
 
-2.2. Create a github token from github settings and encrypt it using travis. Install travis if needed through ruby gems. Copy generated encrypted token.
+	- Set SITE_URL to end site url in pelicanconf.py.
+    - Make sure all .html files start with "./" (relative paths).
+
+3. **Configure Travis**
+
+3.2. Create a github token from github settings and encrypt it using travis. Install travis if needed through ruby gems. Copy generated encrypted token.
 
         gem install travis
         travis encrypt GH_TOKEN=<paste github token here>
     
-2.1 Configuration of travis build is in .travis.yml
+3.1 Create a travis configuration file .travis.yml
     
         ```
         language: python
@@ -41,11 +46,7 @@ Instructions for theme development are in theme folder.
         script:
         - make publish github
 
-        ```
-	
-
-	
-	
+        ```	
 
 
     2.4. Make sure all python pelican-related packages are mentioned in requirements.txt. This will be installed using pip.
