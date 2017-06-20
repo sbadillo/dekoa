@@ -2,7 +2,6 @@
 
 Instructions for theme development are in theme folder.
 
-
 ## How this was configured at first using travis and gh-pages:
 
 1. **Create an orphan branch** 'sources' for project source.
@@ -13,7 +12,14 @@ Instructions for theme development are in theme folder.
 
 2. **Configure travis**
 
-    2.1 configuration of travis build is in .travis.yml
+
+	2.2. Create a github token from github settings and encrypt it using travis. Install travis if needed through ruby gems. Copy generated encrypted token.
+    
+    	gem install travis
+    	travis encrypt GH_TOKEN=<paste github token here>
+    
+
+	2.1 Configuration of travis build is in .travis.yml
     
     ```
     language: python
@@ -31,7 +37,7 @@ Instructions for theme development are in theme folder.
       - sources
     env:
       global:
-        secure: "<paste here encryption result>"
+        secure: "<paste encrypted token>"
     install:
     - pip install -r requirements.txt
     script:
@@ -39,12 +45,9 @@ Instructions for theme development are in theme folder.
 
     ```
 	
-	2.2. create a github token from github and encrypt it.
-	create it in github settings. 
-	
-	2.3. Then encrypt token, copy token and paste as global variable in .travis.yml file
 
-		travis encrypt GH_TOKEN=<token>
+	
+	
 
 
     2.4. Make sure all python pelican-related packages are mentioned in requirements.txt. This will be installed using pip.
