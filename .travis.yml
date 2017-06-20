@@ -14,7 +14,7 @@ notifications:
 
 branches:
   only:
-  - source
+  - sources
 
 env:
   global:
@@ -24,5 +24,4 @@ install:
 - pip install -r requirements.txt
 
 script:
-
 - make publish github
