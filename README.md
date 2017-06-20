@@ -8,15 +8,37 @@ Instructions for theme development are in theme folder.
 1. exit master branch and created an orphan 'sources' branch for project source.
     
     	git checkout -b master
-
         git checkout --orphan sources
-    
         git push -u <this repo remote address> sources
-	
 
 2. configure travis
 
     2.1. configuration of travis build is in .travis.yml
+    
+    ```
+    language: python
+python:
+  - "3.5"
+sudo: required
+
+notifications:
+  email:
+    recipients:
+      email@mail.com
+    on_success: never # default: change
+    on_failure: always # default: always
+branches:
+  only:
+  - sources
+env:
+  global:
+    secure: "<paste here encryption result>"
+install:
+- pip install -r requirements.txt
+script:
+- make publish github
+
+    ```
 	
 	2.2. create a github token from github and encrypt it.
 	create it in github settings. 
