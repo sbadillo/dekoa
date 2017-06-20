@@ -1,28 +1,40 @@
 ## Dekoa project first steps
 
-Instructions for theme development are in theme folder.
+This project has two branches:
+	
+- **sources**: is where the content and source of the website is modified. Is from where the build is launched.
+- **master**: is the 'dist' folder. This is the output site from pelican, and the published side of the repository.
 
-## How this was configured at first using travis and gh-pages:
+# Travis and gh-pages autodeployment
 
-1. **Create an orphan branch** 'sources' for project source.
+This set-up will automatically build the site using Travis-ci. The build is trigered every time a push is done to the sources branch.
+
+1. **.gitignore some folders** not really needed by pelican:
+	
+        /output
+		/themes/simple-boot/node_modules
+        /themes/simple-boot/bower_components
+        # any other extra stuff.
+
+2. **Create an orphan branch** 'sources' for project source.
 
         git checkout -b master
         git checkout --orphan sources
         git push -u <this repo remote address> sources
 
-2. **Preparation for deploying**:
+3. **Preparation for deploying**:
 
 	- Set SITE_URL to end site url in pelicanconf.py.
     - Make sure all .html files start with "./" (relative paths).
 
-3. **Configure Travis**
+#### **Configure Travis**
 
-3.2. Create a github token from github.com > profile > settings > tokens. Encrypt it using travis. Install travis if needed through ruby gems. Copy generated encrypted token.
+1. Create a github token from github.com > profile > settings > tokens. Encrypt it using travis. Install travis if needed through ruby gems. Copy generated encrypted token.
 
         gem install travis
         travis encrypt GH_TOKEN=<paste github token here>
     
-3.3 Create a travis configuration file .travis.yml which tells travis how to build
+2. Create a travis configuration file .travis.yml which tells travis how to build
     
         ```
         language: python
@@ -48,7 +60,7 @@ Instructions for theme development are in theme folder.
 
         ```	
 
-3.4. **Create a requirements.txt** file. As stated in the .travis.yml file, Travis will install these using pip:
+3. **Create a requirements.txt** file. As stated in the .travis.yml file, Travis will install these using pip:
 
 		```
         pelican>=3.6.3
@@ -65,7 +77,7 @@ Instructions for theme development are in theme folder.
         webassets
         ```
 
-3.5 **Make a small change at Pelican's Makefile**. Specifically at the *github: publish* section. It should look like this:
+4. **Make a small change at Pelican's Makefile**. Specifically at the *github: publish* section. It should look like this:
 
 		github: publish
 	
@@ -74,5 +86,9 @@ Instructions for theme development are in theme folder.
 
 This will use ghp-import to commit only the output folder to the master branch. Then it will (force-) push to github using our token. It will overwrite all the content of master branch each time.
 
-2.5. add output to .gitignore, and other big folders: 
-	node modules, bower components, etc.
+---
+## Theme development
+Instructions for theme development are in theme/simple-boot folder. Node and bower are used. Task are automated with gulp. 
+
+	npm install
+    bower install
