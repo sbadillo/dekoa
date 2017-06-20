@@ -1,2 +1,4 @@
 .desmadre/
 output/
+themes/simple-boot/node_modules
+themes/simple-boot/bower_components
