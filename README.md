@@ -5,7 +5,7 @@ This project has two branches:
 - **sources**: is where the content is created and where the site is modified. Is from where the build is launched and the main working branch.
 - **master**: is the 'dist' folder. This is the output from pelican, and the published side of the repository.
 
-# Travis and gh-pages autodeployment
+# Travis and gh-pages autodeployment [![Build Status](https://travis-ci.org/sbadillo/dekoa.svg?branch=master)](https://travis-ci.org/sbadillo/dekoa)
 
 This set-up will automatically build the site using Travis-ci. The build is trigered every time a push is done to the sources branch.
 
