@@ -10,10 +10,11 @@ Instructions for theme development are in theme folder.
     git checkout -b master
     git checkout --orphan sources
     git push -u <this repo remote address> sources
-
+	
 
 
 2. configure travis 
     
     - Requirements for travis build are in requirements.txt
     - configuration of travis build is in .travis.yml
+	- add files to gitignore: node modules, bower components, output folder, etc.
