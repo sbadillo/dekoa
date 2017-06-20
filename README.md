@@ -12,8 +12,7 @@ Instructions for theme development are in theme folder.
 
 2. **Configure travis**
 
-
-	2.2. Create a github token from github settings and encrypt it using travis. Install travis if needed through ruby gems. Copy generated encrypted token.
+2.2. Create a github token from github settings and encrypt it using travis. Install travis if needed through ruby gems. Copy generated encrypted token.
     
     	gem install travis
     	travis encrypt GH_TOKEN=<paste github token here>
