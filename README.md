@@ -2,8 +2,8 @@
 
 This project has two branches:
 	
-- **sources**: is where the content and source of the website is modified. Is from where the build is launched.
-- **master**: is the 'dist' folder. This is the output site from pelican, and the published side of the repository.
+- **sources**: is where the content is created and where the site is modified. Is from where the build is launched and the main working branch.
+- **master**: is the 'dist' folder. This is the output from pelican, and the published side of the repository.
 
 # Travis and gh-pages autodeployment
 
