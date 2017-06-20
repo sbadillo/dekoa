@@ -7,11 +7,11 @@ Instructions for theme development are in theme folder.
 
 1. exit master branch and created an orphan 'sources' branch for project source.
     
-    git checkout -b master
+    	git checkout -b master
 
-    git checkout --orphan sources
+        git checkout --orphan sources
     
-    git push -u <this repo remote address> sources
+        git push -u <this repo remote address> sources
 	
 
 2. configure travis
