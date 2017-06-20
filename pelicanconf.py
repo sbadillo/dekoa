@@ -6,7 +6,7 @@ import os
 
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
-SITEURL = ''
+SITEURL = 'https://sbadillo.github.io/dekoa'
 
 print(SITENAME + ' -- ' +  AUTHOR)
 
