@@ -6,7 +6,7 @@ import os
 
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
-SITEURL = 'https://sbadillo.github.io/dekoa'
+SITEURL = 'https://sbadillo.github.io/dekoa/'
 
 print(SITENAME + ' -- ' +  AUTHOR)
 
@@ -34,7 +34,7 @@ SOCIAL = (('instagram', 'https://www.instagram.com/dekoamx/'),
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 
 # no feed generation for now
