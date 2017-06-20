@@ -26,7 +26,6 @@ $container-max-widths: (
   xl: 1200px // changed from original 1140px
   );
 
-
 //random
 .bg-2 { 
 	background-color: #474e5d; /* Dark Blue */
@@ -63,8 +62,11 @@ $container-max-widths: (
 
 
 // social icons
-.fa {
-	padding: 0 $spacer/2;
+#social > a {
+	// color: black;
+	color:inherit;
+	opacity: .4;
+	padding: 0 $spacer;
 }
 
 // main album properties.
@@ -106,7 +108,7 @@ $container-max-widths: (
 
 .bg-box-4 {
 	background-image: no-repeat;
-	background-position: bottom;
+	background-position: center;
 }
 
 .bg-box-instagram {
@@ -132,7 +134,7 @@ $container-max-widths: (
 }
 
 .hover-bright:hover {
-	filter: brightness(100%);
+	filter: brightness(110%);
 }
 
 //other

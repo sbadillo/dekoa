@@ -31,9 +31,9 @@ $(document).ready(function() {
 	});
 
 	$('#box-texto').hover(function() { 
-		$(this).find('.bg-box-3').fadeTo(100, 0.7);
+		$(this).find('.bg-box-3').css('background-color', '#f31d1a');
 	}, function() {
-		$(this).find('.bg-box-3').fadeTo(100, 1);
+		$(this).find('.bg-box-3').css('background-color', '#e31d1a');
 	});
 
 

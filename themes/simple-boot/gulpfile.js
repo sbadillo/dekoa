@@ -71,7 +71,8 @@ gulp.task('serve', ['default'], function() {
 	
 	gulp.watch([
 		"./source/**/*.*",
-		"./templates/*.html"
+		"./templates/*.html",
+		"../../content/**/*.*"
 		], ['reload-browser']);
 	
 });

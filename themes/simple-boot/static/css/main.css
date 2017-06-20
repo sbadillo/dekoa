@@ -28,8 +28,10 @@
   line-height: 4.8;
   display: block; }
 
-.fa {
-  padding: 0 0.5rem; }
+#social > a {
+  color: inherit;
+  opacity: .4;
+  padding: 0 1rem; }
 
 .album.container {
   padding: 3rem 0; }
@@ -59,7 +61,7 @@
 
 .bg-box-4 {
   background-image: no-repeat;
-  background-position: bottom; }
+  background-position: center; }
 
 .bg-box-instagram {
   background: no-repeat;
@@ -79,7 +81,7 @@
   transition: filter 0.1s ease-in-out; }
 
 .hover-bright:hover {
-  filter: brightness(100%); }
+  filter: brightness(110%); }
 
 .content {
   padding-right: 1rem;
