@@ -5,6 +5,7 @@ This project has two branches:
 - **sources**: is where the content is created and where the site is modified. Is from where the build is launched and the main working branch.
 - **master**: is the 'dist' folder. This is the output from pelican, and the published side of the repository.
 
+
 # Travis and gh-pages autodeployment [![Build Status](https://travis-ci.org/sbadillo/dekoa.svg?branch=master)](https://travis-ci.org/sbadillo/dekoa)
 
 This set-up will automatically build the site using Travis-ci. The build is trigered every time a push is done to the sources branch.
@@ -85,6 +86,17 @@ This set-up will automatically build the site using Travis-ci. The build is trig
 			git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git master
 
 This will use ghp-import to commit only the output folder to the master branch. Then it will (force-) push to github using our token. It will overwrite all the content of master branch each time.
+
+---
+#### Pelican plugins
+Pelican plugins where added as a submodule:
+
+        git submodule --add https://github.com/getpelican/pelican-plugins.git
+
+Travis automatically updates the submodule on each build
+
+
+
 
 ---
 ## Theme development
