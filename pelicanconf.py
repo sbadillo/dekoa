@@ -10,7 +10,7 @@ AUTHOR = u'sb'
 SITENAME = u'Dekoa'
 
 #if you want a root-relative URL structure, leave SITEURL undefined and set RELATIVE_URLS to False.
-SITEURL = ''  
+SITEURL = 'https://sbadillo.github.io/dekoa'  
 print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
 
 PATH = 'content'
