@@ -8,9 +8,9 @@ DEFAULT_LANG = u'es'
 TIMEZONE = 'Europe/Paris'
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
-SITEURL = u'https://sbadillo.github.io/dekoa'
+SITEURL = u'https://sbadillo.github.io/dekoa/'
 
-print('==== Empieza Pelican! : ' + SITENAME + ' by ' +  AUTHOR+ '  ====')
+print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
 
 PATH = 'content'
 
@@ -33,7 +33,7 @@ print('---> Encontre ' + str(len(ULTIMOS_TRABAJOS)) + ' jpg files in ' + ULTIMOS
 
 
 DEFAULT_PAGINATION = False
-RELATIVE_URLS= False   # Changed to False by Makefile :P
+RELATIVE_URLS= True    # true for deployment
 
 # OTHER
 FEED_ALL_ATOM = None
