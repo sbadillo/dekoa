@@ -8,7 +8,7 @@ DEFAULT_LANG = u'es'
 TIMEZONE = 'Europe/Paris'
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
-SITEURL = 'https://sbadillo.github.io/dekoa'
+SITEURL = u'https://sbadillo.github.io/dekoa'
 
 print('==== Empieza Pelican! : ' + SITENAME + ' by ' +  AUTHOR+ '  ====')
 
