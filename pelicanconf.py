@@ -17,11 +17,7 @@ PATH = 'content'
 THEME = './themes/simple-boot'
 
 STATIC_PATHS = ['images','extra'] # paths copied identically from content folder.
-ASSETS_URL =  'theme'
 
-
-# PLUGIN_PATHS = ['./pelican-plugins']
-# PLUGINS = ['assets']
 
 # Social widget: names are used for font-awesome icons, use lowerspace
 SOCIAL = (('instagram', 'https://www.instagram.com/dekoamx/'),
@@ -38,8 +34,7 @@ print('---> Encontre ' + str(len(ULTIMOS_TRABAJOS)) + ' jpg files in ' + ULTIMOS
 
 
 DEFAULT_PAGINATION = False
-# RELATIVE_URLS = True
-
+RELATIVE_URLS = True
 
 # OTHER
 FEED_ALL_ATOM = None
