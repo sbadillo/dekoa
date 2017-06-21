@@ -9,8 +9,7 @@ TIMEZONE = 'Europe/Paris'
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
 
-#if you want a root-relative URL structure, leave SITEURL undefined and set RELATIVE_URLS to False.
-SITEURL = 'https://sbadillo.github.io/dekoa'  
+SITEURL = ''  # empty, see publishconf.py for publishing config
 print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
 
 PATH = 'content'
@@ -34,7 +33,7 @@ print('---> Encontre ' + str(len(ULTIMOS_TRABAJOS)) + ' jpg files in ' + ULTIMOS
 
 
 DEFAULT_PAGINATION = False
-RELATIVE_URLS = False  # true for deployment
+RELATIVE_URLS = True  # true for deployment, see publishconf.py for publishing config
 
 # OTHER
 FEED_ALL_ATOM = None
