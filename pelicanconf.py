@@ -8,7 +8,9 @@ DEFAULT_LANG = u'es'
 TIMEZONE = 'Europe/Paris'
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
-SITEURL = ''
+
+#if you want a root-relative URL structure, leave SITEURL undefined and set RELATIVE_URLS to False.
+SITEURL = ''  
 print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
 
 PATH = 'content'
