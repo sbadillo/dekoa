@@ -18,7 +18,6 @@ THEME = './themes/simple-boot'
 
 STATIC_PATHS = ['images','extra'] # paths copied identically from content folder.
 
-
 # Social widget: names are used for font-awesome icons, use lowerspace
 SOCIAL = (('instagram', 'https://www.instagram.com/dekoamx/'),
           ('facebook', 'https://www.facebook.com/dekoamx/'),)
