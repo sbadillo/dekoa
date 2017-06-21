@@ -8,8 +8,7 @@ DEFAULT_LANG = u'es'
 TIMEZONE = 'Europe/Paris'
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
-SITEURL = u'https://sbadillo.github.io/dekoa/'
-
+SITEURL = ''
 print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
 
 PATH = 'content'
