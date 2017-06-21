@@ -25,8 +25,9 @@ This set-up will automatically build the site using Travis-ci. The build is trig
 
 3. **Preparation for deploying**:
 
-	- Set SITE_URL to end site url in pelicanconf.py.
-    - Make sure all .html files start with "./" (relative paths).
+    - TODO explain settings for both pelicanconf.py(development) and publoshconf.py(deployment)
+    configure publish settings in publishconf.py!, leave pelicanconf.py for deployent.
+
 
 #### **Configure Travis**
 

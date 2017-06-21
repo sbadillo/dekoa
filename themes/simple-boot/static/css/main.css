@@ -65,8 +65,7 @@
 
 .bg-box-instagram {
   background: no-repeat;
-  background-size: cover;
-  background-image: url("/images/pagina_de_inicio/bg-instagram-dekoa.jpg"); }
+  background-size: cover; }
 
 .hover-bright {
   -webkit-filter: brightness(75%);
