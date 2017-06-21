@@ -34,7 +34,7 @@ print('---> Encontre ' + str(len(ULTIMOS_TRABAJOS)) + ' jpg files in ' + ULTIMOS
 
 
 DEFAULT_PAGINATION = False
-RELATIVE_URLS = True
+RELATIVE_URLS= False   # Changed to False by Makefile :P
 
 # OTHER
 FEED_ALL_ATOM = None
