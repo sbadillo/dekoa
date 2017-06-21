@@ -33,7 +33,7 @@ print('---> Encontre ' + str(len(ULTIMOS_TRABAJOS)) + ' jpg files in ' + ULTIMOS
 
 
 DEFAULT_PAGINATION = False
-RELATIVE_URLS= True    # true for deployment
+RELATIVE_URLS = False  # true for deployment
 
 # OTHER
 FEED_ALL_ATOM = None
