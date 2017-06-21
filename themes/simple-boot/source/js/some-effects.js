@@ -9,7 +9,7 @@ $(document).ready(function() {
 		crossDomain: true,
 		dataType: "jsonp",
 		success: function(data){
-			console.log(data['thumbnail_url'])
+			// console.log(data['thumbnail_url'])
 			$('.bg-box-instagram').attr("data-background", 
 				data['thumbnail_url']);
 			$('.bg-box-instagram').lazyload({effect:"fadeIn"});

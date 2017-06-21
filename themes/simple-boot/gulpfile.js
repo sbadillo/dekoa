@@ -70,6 +70,7 @@ gulp.task('serve', ['default'], function() {
 	// then reload browser
 	
 	gulp.watch([
+		"../../pelicanconf.py",
 		"./source/**/*.*",
 		"./templates/*.html",
 		"../../content/**/*.*"
