@@ -5,7 +5,7 @@
   {% block content_title %}
   
   {# Jumbotron #}
-  <div class="jumbotron jumbotron-fluid lazy" data-background="./images/pagina_de_inicio/1_jumbotron.png">
+  <div class="jumbotron jumbotron-fluid lazy" data-background="{{ SITENAME }}/images/pagina_de_inicio/1_jumbotron.png">
     <div class="container text-center">
       <h1 class="display-3" >Flexibilidad</h1>
       <p class="lead">Crea con Dekoa los muebles que siempre has soñado.</p>
@@ -28,7 +28,7 @@
 
       <div class="col-md-6 hide-content-hover text-center px-2">
         <a href="#">
-          <div class="box bg-box-1 hover-bright lazy" data-background="./images/pagina_de_inicio/cajas_fit.png"></div>
+          <div class="box bg-box-1 hover-bright lazy" data-background="{{ SITENAME }}/images/pagina_de_inicio/cajas_fit.png"></div>
           <div class="content">
             <p class="display-4 text-white caption text-shadow">Experiencia</p>
             <p class="text-white carousel-caption text-shadow">Conoce nuestra trayectoria.</p>            
@@ -41,7 +41,7 @@
 
       <div class="col-md-6 text-center hide-content-hover px-2">
         <a href="#">
-          <div class="box bg-box-2 hover-bright lazy" data-background="./images/pagina_de_inicio/espejos-1.jpg"></div>
+          <div class="box bg-box-2 hover-bright lazy" data-background="{{ SITENAME }}/images/pagina_de_inicio/espejos-1.jpg"></div>
           <div class="content">
             <p class="display-4 text-white caption text-shadow">Inspiración</p>
           </div>      
@@ -67,7 +67,7 @@
 
       <div id="box-importante" class="col-md-6 px-2">
         <a href="#">
-          <div class="box bg-box-4 lazy" data-background="./images/experiencia-1.jpg"></div>
+          <div class="box bg-box-4 lazy" data-background="{{ SITENAME }}/images/experiencia-1.jpg"></div>
           <div class="content caption">
             <p class="h3 text-white">¿Tienes una idea en mente?</p>
           </div>      
@@ -78,7 +78,7 @@
       <!-- Cuadro 5: Instagram -->
       <div class="col-md-3 px-2">
         <a class="instagram-thumb" href={{ INSTAGRAM_POST }} target="_blank">
-          <div class="box bg-box-instagram lazy" data-background="./images/pagina_de_inicio/bg-instagram-dekoa.jpg"></div>
+          <div class="box bg-box-instagram lazy" data-background="{{ SITENAME }}/images/pagina_de_inicio/bg-instagram-dekoa.jpg"></div>
           <div class="content caption">
             <!-- no text content -->
           </div>      
