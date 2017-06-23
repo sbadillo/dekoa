@@ -3,7 +3,8 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
 */
 
 .jcarousel-wrapper {
-    margin: 20px auto;
+    // width: 90%; // made whole thing smaller
+    margin: 30px auto;
     position: relative;
     border: 10px solid #fff;
     -webkit-border-radius: 5px;
@@ -12,6 +13,8 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
     -webkit-box-shadow: 0 0 2px #999;
     -moz-box-shadow: 0 0 2px #999;
     box-shadow: 0 0 2px #999;
+    background-color: #fff;
+
 }
 
 /** Carousel **/
@@ -69,11 +72,11 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
 }
 
 .jcarousel-control-prev {
-    left: 15px;
+    left: 25px;
 }
 
 .jcarousel-control-next {
-    right: 15px;
+    right: 25px;
 }
 
 /** Carousel Pagination **/

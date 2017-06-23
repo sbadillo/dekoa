@@ -41,7 +41,7 @@ $container-max-widths: (
 // jumbotron stuff
 
 .jumbotron.jumbotron-fluid {
-  margin-bottom:0px;
+	margin-bottom:0px;
   height: 75vh - $line-height-base; // non-optimal (try to fit all viewport)
   // background:no-repeat url("/images/pagina_de_inicio/1_jumbotron.png");
   background:no-repeat;
@@ -161,11 +161,14 @@ $container-max-widths: (
 }
 
 
-// ultimos trabajos
+// ultimos trabajos container
 
-.ultimos-trabajos {
+.ultimos-trabajos-fluid {
 	padding: $spacer*2 0;
 	margin: $spacer*2 0;
-	background-color: $gray-lighter;
-	// height: 400px;
+	background-color: $gray-lighter;	
+}
+
+.ultimos-trabajos-wrapper{
+	width: 90%;
 }
