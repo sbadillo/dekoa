@@ -1,3 +1,13 @@
+// This gulp file is for theme development:
+//
+// default tasks:  compiles sass(bootstrap+custom) to static folder
+// 								copy necessary css and js from bower components to static folder
+//								runs Pelican 				
+//
+// serve task: 		runs a server at localhost:3000. 
+//								performs default tasks on folder changes
+//								updates browser when change occur
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var exec = require('child_process').exec;
