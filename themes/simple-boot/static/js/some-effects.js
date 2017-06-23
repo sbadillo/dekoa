@@ -42,14 +42,19 @@ $(document).ready(function() {
 	// call plugin jcarouselLazyLoading
 
 	$('.jcarousel')
-		.jcarousel({
-			transitions: Modernizr.csstransitions ? {
-				transforms:   Modernizr.csstransforms,
-				transforms3d: Modernizr.csstransforms3d,
-				easing:       'ease'
-			} : false
-		})
-		.jcarouselLazyLoading()
-		.jcarouselSwipe();
+	.jcarousel({
+		transitions: Modernizr.csstransitions ? {
+			transforms:   Modernizr.csstransforms,
+			transforms3d: Modernizr.csstransforms3d,
+			easing:       'ease'
+		} : false
+	})
+	.jcarouselAutoscroll({
+		interval: 10000,
+		target: '+=1',
+		autostart: true
+	})
+	.jcarouselLazyLoading()
+	.jcarouselSwipe();
 });
 
