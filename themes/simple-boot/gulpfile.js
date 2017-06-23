@@ -12,9 +12,13 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var exec = require('child_process').exec;
 var browserSync = require('browser-sync').create();
+var modernizr = require('gulp-modernizr');
+var uglify = require('gulp-uglify');
+var gutil = require('gulp-util');
 
 
-gulp.task('default', ['copycss','copyjs','sass', 'runPelican'], function(){});
+gulp.task('default', ['copycss', 'sass', 'copyjs','modernizr', 'runPelican'], function(){});
+
 
 // compile sass into CSS 
 gulp.task('sass', function() {
@@ -38,10 +42,38 @@ gulp.task('copyjs', function() {
 		'./bower_components/tether/dist/js/tether.min.js',
 		'./bower_components/bootstrap/dist/js/bootstrap.min.js',
 		'./bower_components/jcarousel/dist/jquery.jcarousel.min.js',
-		'./bower_components/jcarouselLazyLoading/dist/jquery.jcarousel-lazyloading.min.js',		
+		'./bower_components/jcarouselLazyLoading/dist/jquery.jcarousel-lazyloading.min.js',
+		'./bower_components/jcarousel-swipe/dist/jquery.jcarousel-swipe.min.js',	
 		'./source/js/*.js'])
 	.pipe(gulp.dest('./static/js/'));
 });
+
+
+// run through js code and look for modernizr needs.
+
+gulp.task('modernizr', function() {
+	gulp.src('static/js/*.js')
+	.pipe(modernizr( 'modernizr-custom.min.js', {
+		"crawl": false,
+		"customTests": [],
+		"tests": [
+		"csstransforms",
+		"csstransforms3d",
+		"csstransitions"
+		],
+		"options": [
+		"domPrefixes",
+		"prefixes",
+		"testAllProps",
+		"testProp",
+		"testStyles",
+		"setClasses"
+		],
+	}) )
+	.pipe(uglify())
+	.pipe(gulp.dest("./static/js/"))
+});
+
 
 gulp.task('runPelican', function (cb) {
 	exec( 'pelican -d', { cwd: '../..'

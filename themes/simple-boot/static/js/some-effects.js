@@ -1,7 +1,13 @@
 $(document).ready(function() {
 
+	// Use lazyload
+
+	$(".lazy").lazyload({
+		effect          : "fadeIn"
+	});
 
 	// get instagram picture from pelicanconf
+	
 	var href = $('.instagram-thumb').attr('href');
 	$.ajax({
 		url: "https://api.instagram.com/oembed/?url="+href,
@@ -17,13 +23,8 @@ $(document).ready(function() {
 	});
 
 
-	// use lazyload
-	$(".lazy").lazyload({
-		effect          : "fadeIn"
-	});
+	// Hover effects main page
 
-
-	// hover effects main
 	$('.hide-content-hover').hover(function() {
 		$(this).find('.content').hide();
 	}, function() {
@@ -37,12 +38,18 @@ $(document).ready(function() {
 	});
 
 
-	// Call jcarousel
+	// Call jcarousel using modernizr
+	// call plugin jcarouselLazyLoading
+
 	$('.jcarousel')
-    .jcarousel()             // init jcarousel
-    .jcarouselLazyLoading(); // init jcarouselLazyLoading
-
-
-
+		.jcarousel({
+			transitions: Modernizr.csstransitions ? {
+				transforms:   Modernizr.csstransforms,
+				transforms3d: Modernizr.csstransforms3d,
+				easing:       'ease'
+			} : false
+		})
+		.jcarouselLazyLoading()
+		.jcarouselSwipe();
 });
 

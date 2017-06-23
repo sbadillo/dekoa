@@ -6107,7 +6107,8 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
 .jcarousel {
   position: relative;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  /*the # of li items on display depends on how many fit here*/ }
 
 .jcarousel ul {
   width: 20000em;
