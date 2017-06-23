@@ -13,7 +13,9 @@
     </div>
   </div>
 
+  
   {# Conoce mas... #}
+
   <div class="container-fluid conoce-mas-container">
     <div class="container">
       <p class="conoce-mas text-center text-white">Conoce más. &raquo;</p>
@@ -21,6 +23,7 @@
   </div>
 
   {# 'Album' section Thumbnails #}
+
   <div class="album container">
     <div class="row justify-content-md-center">
 
@@ -89,17 +92,18 @@
     </div>
   </div> <!-- finish album -->
 
+  {# Social Icons #}
 
   <!--Social links-->
   <div id="social" class="text-center">
     {% for title,url in SOCIAL %}
     <a href="{{ url }}" target = "_blank">
-    <i class="fa fa-{{ title }} fa-5x" aria-hidden="true"></i>
+      <i class="fa fa-{{ title }} fa-5x" aria-hidden="true"></i>
     </a>
     {% endfor %}
   </div>
 
-
+  {# Ultimos trabajos #}
 
   <div class="container-fluid ultimos-trabajos">
     <p class="lead">Trabajos Recientes</p>
