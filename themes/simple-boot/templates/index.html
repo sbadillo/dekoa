@@ -117,23 +117,26 @@
 
 
   <div class="container-fluid location-container">
-    location-container
+
+
+    <h2 class="h4">Dónde encontrarnos</h2>
+
+    <!-- Add Google Maps -->
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+    <script>
+      function myMap() {
+        var myCenter = new google.maps.LatLng(29.130236, -110.992666  );
+        var mapProp = {center:myCenter, zoom:13, scrollwheel:true, draggable:true ,mapTypeControl: false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhhgV2ChjvMqzpjcWpm0m-Fn7jhNV5VE&callback=myMap"></script>
+
   </div>
 
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(29.130236, -110.992666  );
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBuaNDPQPxZMKSPlaeReb0vP7PPE9Zzj8&callback=myMap"></script>
-        
   {% endblock %}
 
   {% if articles_page.has_other_pages() %}

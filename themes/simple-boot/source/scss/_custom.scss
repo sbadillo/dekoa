@@ -72,7 +72,7 @@ $container-max-widths: (
 // main album properties.
 
 .album.container {
-	padding: $spacer*3 0;
+	padding: $spacer*3 $spacer*4;
 }
 
 .album > .row {
