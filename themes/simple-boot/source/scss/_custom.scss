@@ -62,17 +62,24 @@ $container-max-widths: (
 
 
 // social icons
+
+.social1.container{
+	padding-bottom: $spacer*3 0 ;
+}
+
 #social > a {
-	// color: black;
-	color:inherit;
-	opacity: .4;
-	padding: 0 $spacer;
+	color: $gray;
+	padding: 0 $spacer*2;
+}
+
+div.social1.container {
+	padding-bottom: 3rem !important;
 }
 
 // main album properties.
 
 .album.container {
-	padding: $spacer*3 $spacer*4;
+	padding: $spacer*4 $spacer*4;
 }
 
 .album > .row {
@@ -80,9 +87,9 @@ $container-max-widths: (
 }
 
 .box {
-	height:240px;
+	height:200px;
 	width:100%;
-	background-size:cover; 
+	background-size:cover;
 	position:relative;
 	overflow: hidden;
 }
@@ -147,8 +154,12 @@ $container-max-widths: (
 // some text tweaks
 .caption {
 	position: absolute;
-	top: 38%; //attempts to center the caption
+	top: 36%; //attempts to center the caption
 	width: 90%;
+}
+
+.carousel-caption {
+	top: 60%  // lowering a bit more the carousel-caption
 }
 
 .border {

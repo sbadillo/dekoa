@@ -60,7 +60,7 @@
         <a href="#">
           <div class="box bg-box-3 lazy" data-background=""></div>
           <div class="content caption">
-            <p class="h3 text-white">Visítanos en nuesto nuevo hogar!</p>
+            <p class="h4 text-white">Visítanos en nuesto nuevo hogar!</p>
             <p class="align-items-baseline text-white">Nueva localidad &raquo;</p>
           </div>      
         </a>
@@ -94,14 +94,26 @@
 
   {# Social Icons #}
 
+
   <!--Social links-->
-  <div id="social" class="text-center">
-    {% for title,url in SOCIAL %}
-    <a href="{{ url }}" target = "_blank">
-      <i class="fa fa-{{ title }} fa-5x" aria-hidden="true"></i>
-    </a>
-    {% endfor %}
-  </div>
+
+
+    <div class="social1 container">
+    <div class="social">
+      
+
+      <div id = "social" class="text-center">
+        {% for title,url in SOCIAL %}
+        <a href="{{ url }}" target = "_blank">
+          <i class="fa fa-{{ title }} fa-5x" aria-hidden="true"></i>
+        </a>
+        {% endfor %}
+      </div>
+      
+    </div>
+    </div>
+
+
 
   {# Ultimos trabajos #}
 
@@ -126,21 +138,28 @@
     <script>
       function myMap() {
         var myCenter = new google.maps.LatLng(29.130236, -110.992666  );
-        var mapProp = {center:myCenter, zoom:13, scrollwheel:true, draggable:true ,mapTypeControl: false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        var marker = new google.maps.Marker({position:myCenter});
-        marker.setMap(map);
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhhgV2ChjvMqzpjcWpm0m-Fn7jhNV5VE&callback=myMap"></script>
+        var mapProp = {
+          center:myCenter, 
+          zoom:13, 
+          scrollwheel:false, 
+          draggable:true,
+          mapTypeControl: false,
+          streetViewControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP};
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhhgV2ChjvMqzpjcWpm0m-Fn7jhNV5VE&callback=myMap"></script>
 
-  </div>
+    </div>
 
 
-  {% endblock %}
+    {% endblock %}
 
-  {% if articles_page.has_other_pages() %}
-  {% include 'pagination.html' %}
-  {% endif %}
-</section><!-- /#content -->
-{% endblock content %}
+    {% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+    {% endif %}
+  </section><!-- /#content -->
+  {% endblock content %}

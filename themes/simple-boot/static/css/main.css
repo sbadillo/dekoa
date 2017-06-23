@@ -28,19 +28,24 @@
   line-height: 4.8;
   display: block; }
 
+.social1.container {
+  padding-bottom: 3rem 0; }
+
 #social > a {
-  color: inherit;
-  opacity: .4;
-  padding: 0 1rem; }
+  color: #464a4c;
+  padding: 0 2rem; }
+
+div.social1.container {
+  padding-bottom: 3rem !important; }
 
 .album.container {
-  padding: 3rem 4rem; }
+  padding: 4rem 4rem; }
 
 .album > .row {
   margin: 1rem 0; }
 
 .box {
-  height: 240px;
+  height: 200px;
   width: 100%;
   background-size: cover;
   position: relative;
@@ -90,8 +95,11 @@
 
 .caption {
   position: absolute;
-  top: 38%;
+  top: 36%;
   width: 90%; }
+
+.carousel-caption {
+  top: 60%; }
 
 .border {
   border: 1px solid orange;
@@ -6095,16 +6103,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 at http://sorgalla.com/jcarousel/ with some slight modifications
 */
 .jcarousel-wrapper {
-  margin: 30px auto;
-  position: relative;
-  border: 10px solid #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 2px #999;
-  -moz-box-shadow: 0 0 2px #999;
-  box-shadow: 0 0 2px #999;
-  background-color: #fff; }
+  width: 90%;
+  margin: 3rem auto;
+  position: relative; }
 
 /** Carousel **/
 .jcarousel {
@@ -6121,9 +6122,10 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
   padding: 0; }
 
 .jcarousel li {
-  width: 200px;
+  width: 15rem  !important;
   float: left;
   border: 1px solid #fff;
+  margin: 0 1rem;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
