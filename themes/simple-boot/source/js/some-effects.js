@@ -37,6 +37,12 @@ $(document).ready(function() {
 	});
 
 
+	// Call jcarousel
+	$('.jcarousel')
+    .jcarousel()             // init jcarousel
+    .jcarouselLazyLoading(); // init jcarouselLazyLoading
+
+
 
 });
 

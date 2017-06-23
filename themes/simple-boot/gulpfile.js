@@ -37,6 +37,8 @@ gulp.task('copyjs', function() {
 		'./bower_components/jquery/dist/jquery.min.js',
 		'./bower_components/tether/dist/js/tether.min.js',
 		'./bower_components/bootstrap/dist/js/bootstrap.min.js',
+		'./bower_components/jcarousel/dist/jquery.jcarousel.min.js',
+		'./bower_components/jcarouselLazyLoading/dist/jquery.jcarousel-lazyloading.min.js',		
 		'./source/js/*.js'])
 	.pipe(gulp.dest('./static/js/'));
 });
