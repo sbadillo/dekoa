@@ -15,11 +15,12 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "^4.7.0"
-  },
-  "devDependencies": {
+    "font-awesome": "^4.7.0",
     "jcarousel": "^0.3.5",
     "jcarouselLazyLoading": "jcarousel-lazyLoading#^0.1.0",
-    "jcarouselSwipe": "jcarousel-swipe#^0.3.4"
+    "jcarouselSwipe": "jcarousel-swipe#^0.3.4",
+    "magnific-popup": "^1.1.0"
+  },
+  "devDependencies": {
   }
 }

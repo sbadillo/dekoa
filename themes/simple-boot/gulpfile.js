@@ -14,28 +14,35 @@ var exec = require('child_process').exec;
 var browserSync = require('browser-sync').create();
 var modernizr = require('gulp-modernizr');
 var uglify = require('gulp-uglify');
-var gutil = require('gulp-util');
+var concat = require('gulp-concat');
 
 
-gulp.task('default', ['copycss', 'sass', 'copyjs','modernizr', 'runPelican'], function(){});
+gulp.task('default', ['copycss', 'sass', 'modernizr', 'runPelican'], function(){});
 
+// ---
+// Compile sass into CSS 
 
-// compile sass into CSS 
 gulp.task('sass', function() {
 	return gulp.src('./source/scss/*.scss')
 	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest('./static/css'))
 });
 
-// copy css files from their original place
+// ---
+// copy vendor css files from their original place
+
 gulp.task('copycss', function() {
 	return gulp.src([
 		'./bower_components/font-awesome/css/font-awesome.min.css',
+		'./bower_components/maginfic-popup/dist/magnific-popup.css'
 		])
 	.pipe(gulp.dest('./static/css/'));
 });
 
-//copy js files from their original place.
+
+// ---
+// Copy vendor js files from their original place.
+
 gulp.task('copyjs', function() {
 	return gulp.src([
 		'./bower_components/jquery/dist/jquery.min.js',
@@ -44,14 +51,17 @@ gulp.task('copyjs', function() {
 		'./bower_components/jcarousel/dist/jquery.jcarousel.min.js',
 		'./bower_components/jcarouselLazyLoading/dist/jquery.jcarousel-lazyloading.min.js',
 		'./bower_components/jcarousel-swipe/dist/jquery.jcarousel-swipe.min.js',	
+		'./bower_components/magnific-popup/dist/jquery.magnific-popup.min.js',	
 		'./source/js/*.js'])
+	.pipe(concat('all.js'))
+	.pipe(uglify())
 	.pipe(gulp.dest('./static/js/'));
 });
 
+// ---
+// Run through js code and look for modernizr needs.
 
-// run through js code and look for modernizr needs.
-
-gulp.task('modernizr', function() {
+gulp.task('modernizr', ['copyjs'], function() {
 	gulp.src('static/js/*.js')
 	.pipe(modernizr( 'modernizr-custom.min.js', {
 		"crawl": false,
