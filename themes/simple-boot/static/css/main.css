@@ -40,7 +40,7 @@ div.social1.container {
 
 .album.container {
   padding: 4rem 0;
-  max-width: 700px; }
+  max-width: 750px; }
 
 .album > .row {
   margin: 1rem 0; }
@@ -111,12 +111,14 @@ div.social1.container {
   text-shadow: 1px 2px 3px rgba(1, 1, 1, 0.4); }
 
 .ultimos-trabajos-fluid {
-  padding: 2rem 0;
+  padding: 4rem 0;
+  padding-bottom: 5rem;
   margin: 2rem 0;
   background-color: #eceeef; }
 
 .ultimos-trabajos-wrapper {
-  width: 90%; }
+  max-width: 750px;
+  width: 100%; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -2737,7 +2739,7 @@ tbody.collapse.show {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem; }
+  padding: 1.11111rem 1rem; }
 
 .navbar-brand {
   display: inline-block;
@@ -6105,8 +6107,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 at http://sorgalla.com/jcarousel/ with some slight modifications
 */
 .jcarousel-wrapper {
-  width: 90%;
-  margin: 3rem auto;
+  width: 100%;
   position: relative; }
 
 /** Carousel **/

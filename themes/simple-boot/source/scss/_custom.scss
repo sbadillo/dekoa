@@ -18,7 +18,7 @@ $color-river-bed:				#474e5d;			// ~obscuro-gris-azulon
 $color-aqua-island:			#a8dadc;			// ~color cielo claro
 
 
-$navbar-padding-y:	($spacer / .5);
+$navbar-padding-y:	($spacer / .9);
 $container-max-widths: (
 	sm: 540px,
 	md: 720px,
@@ -47,7 +47,7 @@ $display4-weight:     300 ;
 // jumbotron stuff
 
 .jumbotron.jumbotron-fluid {
-margin-bottom:0px;
+	margin-bottom:0px;
   height: 75vh - $line-height-base; // non-optimal (try to fit all viewport)
   // background:no-repeat url("/images/pagina_de_inicio/1_jumbotron.png");
   background:no-repeat;
@@ -86,7 +86,7 @@ div.social1.container {
 
 .album.container {
 	padding: $spacer*4 0;
-	max-width: 700px; 
+	max-width: 750px; 
 }
 
 .album > .row {
@@ -186,11 +186,13 @@ div.social1.container {
 // ultimos trabajos container
 
 .ultimos-trabajos-fluid {
-	padding: $spacer*2 0;
+	padding: $spacer*4 0;
+	padding-bottom: $spacer*5;
 	margin: $spacer*2 0;
 	background-color: $gray-lighter;	
 }
 
 .ultimos-trabajos-wrapper{
-	width: 90%;
+	max-width: 750px;
+	width: 100%;
 }

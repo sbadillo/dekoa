@@ -35,7 +35,8 @@ $(document).ready(function() {
 		var imgurl = 'url(' + $(this).attr('data-background') +')';
 		console.log(imgurl);
 		$(this).find('.bg-box-3').css('background', imgurl);
-		$(this).find('.bg-box-3').css('background-size', 'cover');		
+		$(this).find('.bg-box-3').css('background-size', 'cover');
+				
 	}, function() {
 		$(this).find('.bg-box-3').css('background', '#e31d1a');
 	});
