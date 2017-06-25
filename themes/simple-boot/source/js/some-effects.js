@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 
 	// magnific popup
-	$('.popup-gmaps').magnificPopup({
+	$('.mfp-iframe').magnificPopup({
 		type:'iframe',
 		iframe: {
 			markup: '<div class="mfp-iframe-scaler">'+
