@@ -26,6 +26,12 @@ $container-max-widths: (
   xl: 1200px // changed from original 1140px
   );
 
+// modification to display-4 sizes (text was too large)
+$display4-size: 			3rem; 	//default was 3.5rem
+$display4-weight:     300 ; 
+
+
+
 //random
 .bg-2 { 
 	background-color: #474e5d; /* Dark Blue */
@@ -41,7 +47,7 @@ $container-max-widths: (
 // jumbotron stuff
 
 .jumbotron.jumbotron-fluid {
-	margin-bottom:0px;
+margin-bottom:0px;
   height: 75vh - $line-height-base; // non-optimal (try to fit all viewport)
   // background:no-repeat url("/images/pagina_de_inicio/1_jumbotron.png");
   background:no-repeat;
@@ -79,7 +85,8 @@ div.social1.container {
 // main album properties.
 
 .album.container {
-	padding: $spacer*4 $spacer*4;
+	padding: $spacer*4 0;
+	max-width: 700px; 
 }
 
 .album > .row {
@@ -89,7 +96,7 @@ div.social1.container {
 .box {
 	height:200px;
 	width:100%;
-	background-size:cover;
+	// background-size:cover;
 	position:relative;
 	overflow: hidden;
 }
@@ -108,16 +115,20 @@ div.social1.container {
 	background-position: bottom;      // used for espejos image
 }
 
+// location box
 .bg-box-3 {
+	background-size: cover;
+	background: no-repeat;
 	background-color: $color-red-dekoa;
-	opacity: 1;
 }
 
 .bg-box-4 {
 	background-image: no-repeat;
+	background-size: cover;
 	background-position: center;
 }
 
+// instagram box
 .bg-box-instagram {
 	background: no-repeat;
 	background-size:cover;

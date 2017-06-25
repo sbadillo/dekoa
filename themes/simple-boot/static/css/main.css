@@ -39,7 +39,8 @@ div.social1.container {
   padding-bottom: 3rem !important; }
 
 .album.container {
-  padding: 4rem 4rem; }
+  padding: 4rem 0;
+  max-width: 700px; }
 
 .album > .row {
   margin: 1rem 0; }
@@ -47,7 +48,6 @@ div.social1.container {
 .box {
   height: 200px;
   width: 100%;
-  background-size: cover;
   position: relative;
   overflow: hidden; }
 
@@ -61,11 +61,13 @@ div.social1.container {
   background-position: bottom; }
 
 .bg-box-3 {
-  background-color: #e31d1a;
-  opacity: 1; }
+  background-size: cover;
+  background: no-repeat;
+  background-color: #e31d1a; }
 
 .bg-box-4 {
   background-image: no-repeat;
+  background-size: cover;
   background-position: center; }
 
 .bg-box-instagram {
@@ -580,7 +582,7 @@ h6, .h6 {
   line-height: 1.1; }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.1; }
 
