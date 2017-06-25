@@ -22,8 +22,12 @@
   <!-- main.css include bootstrap -->
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css"> 
 
+  <!-- magnific popup -->
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/magnific-popup.css">
+
   <!-- fontawesome icons -->  
   <script src="https://use.fontawesome.com/ec1f6d2702.js"></script> 
+
   
   {% endblock head %}
 
@@ -98,26 +102,25 @@
   <footer id="contentinfo" class="body">
     <address id="about" class="vcard body">
 
-      <!-- jquery, tether, bootstrap -->
+    <!-- Old loading of scripts -->
 
-<!-- 
+    <!--
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.min.js"></script> 
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/tether.min.js"></script>
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>      
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/lazy-load-modified.min.js"></script>
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/modernizr-custom.min.js"></script>
-
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/some-effects.js"></script>
-
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.jcarousel.min.js"></script>
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.jcarousel-lazyloading.min.js"></script>
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.jcarousel-swipe.min.js"></script>
-
       <script type="text/javascript" src="{{ SITEURL }}/theme/js/jcarousel.responsive.js"></script>
+    -->   
 
-    -->
-
+    <!-- modernizr -->
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/modernizr-custom.min.js"></script>
+    
+    <!-- all scripts minified and concatenated (excep modernizr) -->
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/all.js"></script>
 
 

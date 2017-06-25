@@ -17,7 +17,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 
 
-gulp.task('default', ['copycss', 'sass', 'modernizr', 'runPelican'], function(){});
+gulp.task('default', ['sass','copycss', 'modernizr', 'runPelican'], function(){});
 
 // ---
 // Compile sass into CSS 
@@ -31,10 +31,10 @@ gulp.task('sass', function() {
 // ---
 // copy vendor css files from their original place
 
-gulp.task('copycss', function() {
+gulp.task('copycss', ['sass'], function() {
 	return gulp.src([
 		'./bower_components/font-awesome/css/font-awesome.min.css',
-		'./bower_components/maginfic-popup/dist/magnific-popup.css'
+		'./bower_components/magnific-popup/dist/magnific-popup.css'
 		])
 	.pipe(gulp.dest('./static/css/'));
 });
@@ -53,8 +53,8 @@ gulp.task('copyjs', function() {
 		'./bower_components/jcarousel-swipe/dist/jquery.jcarousel-swipe.min.js',	
 		'./bower_components/magnific-popup/dist/jquery.magnific-popup.min.js',	
 		'./source/js/*.js'])
+	// .pipe(uglify())   // i dont know why this is slowing things down.
 	.pipe(concat('all.js'))
-	.pipe(uglify())
 	.pipe(gulp.dest('./static/js/'));
 });
 

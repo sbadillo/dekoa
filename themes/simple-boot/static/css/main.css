@@ -6122,10 +6122,9 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
   padding: 0; }
 
 .jcarousel li {
-  width: 15rem  !important;
+  width: 10rem  !important;
   float: left;
   border: 1px solid #fff;
-  margin: 0 1rem;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -6140,13 +6139,13 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
 .jcarousel-control-next {
   position: absolute;
   top: 50%;
-  margin-top: -15px;
+  margin-top: -20px;
   width: 30px;
   height: 30px;
   text-align: center;
   background: #4E443C;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   text-shadow: 0 0 1px #000;
   font: 24px/27px Arial, sans-serif;
   -webkit-border-radius: 30px;
@@ -6165,7 +6164,7 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
 /** Carousel Pagination **/
 .jcarousel-pagination {
   position: absolute;
-  bottom: -40px;
+  bottom: -50px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -6175,10 +6174,10 @@ at http://sorgalla.com/jcarousel/ with some slight modifications
 .jcarousel-pagination a {
   text-decoration: none;
   display: inline-block;
-  font-size: 11px;
-  height: 10px;
-  width: 10px;
-  line-height: 10px;
+  font-size: .6rem;
+  height: .5rem;
+  width: .5rem;
+  line-height: .5rem;
   background: #fff;
   color: #4E443C;
   border-radius: 10px;
