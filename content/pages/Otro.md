@@ -6,7 +6,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati vero
 
 <!-- ![experiencia-2](./images/experiencia-2.jpg "ẗext") -->
 
-Illum explicabo quis ipsam reiciendis eum, obcaecati quia eligendi, deserunt rem nemo ducimus ipsum facere. Fugiat, quaerat provident.
-
-
-
+Texto Lorem ipsum
