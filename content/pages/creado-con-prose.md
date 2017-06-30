@@ -9,12 +9,21 @@ Todo se escrive en un simple texto de formato "Markdown". Escribir en markdown e
 
 1. Lo primero que se escribe en nuestro documento es es la información principal del post o la página. A esta info se llama **metadata** y sirve como configuración. En nuestro caso sólo hay dos campos de metadata: *Title* (título) y *Date* (fecha).
 
-Por ejemplo, vamos a crear una nueva pagina titulada "Novedades".
+Por ejemplo, vamos a crear una nueva pagina titulada "Novedades". Escrivimos al comienzo estas dos lineas.
 
-```
-Title: Novedades
-Date: 2017-07-01
-```
+		Title: Novedades
+		Date: 2017-07-01
+
+2. Ahora dejamos una linea en blanco y comensamos a escrivir el contenido de nuestra pagina o articulo. Lo fácil de Markdown es que tiene varios trucos para dar formato a nuestro texto. Aqui estan los mas usuales:
+
+- Para escribir un titulo usamos el simbolo '#', un subsititulo de primer nivel se escribe '##', tercer nivel '###' y asi sucesivamente: ejemplo:
+
+Si escribimos:
+
+		# Título
+		## Subtítulo
+		### Subsubtítulo
+
 
 ## A New Post
 
