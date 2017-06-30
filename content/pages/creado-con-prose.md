@@ -18,10 +18,5 @@ Todo se escrive en un simple texto de formato "Markdown". Escribir en markdown e
 
 imagenes insertadas con html normalmente para poder controlar mejor tamaño, etc:
 
-<img src="/images/logo_dekoa_red_550.png" style="width: 100px">
-
-imagenes insertadas via prose.io (no se controla el tamaño):
-
-![puerta-3.jpg]({{site.baseurl}}/content/pages/puerta-3.jpg)
-
+<img src="./images/logo_dekoa_red_550.png" style="width: 100px">
 
