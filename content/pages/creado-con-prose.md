@@ -21,20 +21,26 @@ Por ejemplo, vamos a crear una nueva pagina titulada "Novedades". Escrivimos al 
 
 Para escribir un titulo usamos el simbolo '#', un subtitulo de primer nivel se escribe '##', uno de tercer nivel '###' y asi sucesivamente.
 
-Para transformar un text en letra cursiva, lo encerramos en asteriscos *: *este texto es en cursiva*.
+*Para transformar un texto en letra cursiva, lo encerramos en asteriscos.*
+
+**Para transformar un texto en negritas, lo encerramos en doble asteriscos**.
+
 
 
 		# Nueva linea comercial
         
-        Estamos felices de anunciar nuestra amplia gamma comercial. Conoce nuestra serie para el hogar y empresial!
+        Estamos felices de anunciar nuestra amplia gamma comercial.
+        Conoce nuestra serie para el hogar y empresial!
 		
         ## Productos para el Hogar
         
-        Nuestros productos para el hogar combinan diseño con funcionalidad. Ven y descubre nuestros productos que haran de tu espacio un lugar más agradable. En markdown tambien podemos acer *cursivas* y **negritas** rapiamente.
+        Nuestros productos para el hogar combinan diseño con funcionalidad. 
+        Ven y descubre nuestros productos que haran de tu espacio un lugar más agradable.
+        En markdown tambien podemos acer *cursivas* y **negritas** rapiamente.
         
         ## Productos para la Oficina
         
-        La gamma empresarial se enfoca en rendimiento y comodidad. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Texto relleno: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        La gamma empresarial se enfoca en rendimiento y comodidad. Etcetera.
 
 # Links
 los links se escriven en el siguiente formato: 
