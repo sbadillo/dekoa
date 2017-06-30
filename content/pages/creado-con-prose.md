@@ -22,9 +22,17 @@ Si escribimos:
 
 		# Título
 		## Subtítulo
-        Texto normal bajo el subtítulo
+        Texto normal bajo el subtítulo.
 		### Subsubtítulo
         Texto normal bajo el subsubtítulo
+
+Obtenemos:
+
+# Título
+## Subtítulo
+Texto normal bajo el subtítulo.
+### Subsubtítulo
+Texto normal bajo el subsubtítulo
 
 
 ## A New Post
