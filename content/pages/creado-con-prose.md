@@ -16,13 +16,15 @@ Por ejemplo, vamos a crear una nueva pagina titulada "Novedades". Escrivimos al 
 
 2. Ahora dejamos una linea en blanco y comensamos a escrivir el contenido de nuestra página o artículo. Lo fácil de Markdown es que tiene varios trucos para dar formato a nuestro texto. Aqui estan los mas comunes:
 
-Para escribir un titulo usamos el simbolo '#', un subsititulo de primer nivel se escribe '##', tercer nivel '###' y asi sucesivamente: ejemplo:
+Para escribir un titulo usamos el simbolo '#', un subsititulo de primer nivel se escribe '##', uno de tercer nivel '###' y asi sucesivamente: ejemplo:
 
 Si escribimos:
 
 		# Título
 		## Subtítulo
+        Texto normal bajo el subtítulo
 		### Subsubtítulo
+        Texto normal bajo el subsubtítulo
 
 
 ## A New Post
