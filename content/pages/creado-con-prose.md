@@ -18,19 +18,18 @@ Por ejemplo, vamos a crear una nueva pagina titulada "Novedades". Escrivimos al 
 
 Para escribir un titulo usamos el simbolo '#', un subsititulo de primer nivel se escribe '##', uno de tercer nivel '###' y asi sucesivamente: ejemplo:
 
-Si escribimos:
+Ejemplo:
 
-		# Título
-		## Subtítulo
-		### Subsubtítulo
-
-Obtenemos:
-
-> # Título
-> ## Subtítulo
->### Subsubtítulo
-
-
+		# Nueva linea comercial
+        
+        Estamos felices de anunciar nuestra amplia gamma comercial. Conoce nuestra serie para el hogar y empresial.
+		
+        ## Productos para el Hogar
+        Nuestros productos para el hogar combinan diseño con funcionalidad. Ven y descubre nuestros productos que haran de tu espacio un lugar más agradable. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.  
+        
+        ## Productos para la Oficina
+        La gamma empresarial se enfoca en rendimiento y comodidad. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		
 
 ## A New Post
 
