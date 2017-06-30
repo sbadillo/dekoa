@@ -6,6 +6,11 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
+// ==========================================
+// ====== Variable overrides and others =====
+// ==========================================
+
+
 $bg-2:				#474e5d;			// 	just a color
 
 // custom colors
@@ -32,6 +37,25 @@ $display4-weight:     300 ;
 
 
 
+
+
+
+// ==========================================
+// ====== Base.html and general stuff =======
+// ==========================================
+
+
+
+
+footer {
+	height:auto;
+	padding:$spacer 0;
+	background-color: $color-river-bed;
+	color:$gray-lighter;
+	line-height:$spacer;
+}
+
+
 //random
 .bg-2 { 
 	background-color: #474e5d; /* Dark Blue */
@@ -44,7 +68,29 @@ $display4-weight:     300 ;
 	// opacity: 0.4;  // used for black logo
 }
 
-// jumbotron stuff
+// textos
+
+.rojito-right > p {
+	border-right:$spacer/3 dotted $color-red-dekoa;
+	padding-right:$spacer;
+}
+
+.rojito-left > p {
+	border-left:$spacer/3 dotted $color-red-dekoa;
+	padding-left:$spacer;
+}
+
+
+
+
+// ==========================================
+// ============ Index stuff =================
+// ==========================================
+
+
+
+
+// ======== Main splash ========
 
 .jumbotron.jumbotron-fluid {
 	margin-bottom:0px;
@@ -67,7 +113,7 @@ $display4-weight:     300 ;
 }
 
 
-// social icons
+// ======== Social icons ========
 
 .social1.container{
 	padding-bottom: $spacer*3 0 ;
@@ -82,7 +128,7 @@ div.social1.container {
 	padding-bottom: 3rem !important;
 }
 
-// main album properties.
+// ======== Feature Boxes =========
 
 .album.container {
 	padding: $spacer*4 0;
@@ -101,41 +147,41 @@ div.social1.container {
 	overflow: hidden;
 }
 
-
-// imagenes en thumbnails, pagina principal
+// box: experiencia
 .bg-box-1 {
 	background: no-repeat;
 	background-size: cover;
 	background-position: top;
 }
 
+// box: inspiracion
 .bg-box-2 {
 	background: no-repeat;
 	// background-position: center;   //used for decorando image
 	background-position: bottom;      // used for espejos image
 }
 
-// location box
+// box: location
 .bg-box-3 {
 	background-size: cover;
 	background: no-repeat;
 	background-color: $color-red-dekoa;
 }
 
+// box: actualidades
 .bg-box-4 {
 	background-image: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-// instagram box
+// box: instagram 
 .bg-box-instagram {
 	background: no-repeat;
 	background-size:cover;
-
-	// background-position: center;
 }
 
+// ## Feature box: efectos en boxes
 .hover-bright {
 	-webkit-filter: brightness(75%);
 	-moz-filter: brightness(75%);
@@ -154,7 +200,7 @@ div.social1.container {
 	filter: brightness(110%);
 }
 
-//other
+// ## Feature box: Contenidos
 .content {
 	padding-right: $spacer;
 	padding-left:$spacer;
@@ -162,7 +208,6 @@ div.social1.container {
 	z-index: 3;
 }
 
-// some text tweaks
 .caption {
 	position: absolute;
 	top: 36%; //attempts to center the caption
@@ -173,17 +218,11 @@ div.social1.container {
 	top: 60%  // lowering a bit more the carousel-caption
 }
 
-.border {
-	border:1px solid orange;
-	z-index:9999;
-}
-
 .text-shadow {
 	text-shadow:1px 2px 3px rgba(1,1,1,0.4);
 }
 
-
-// ultimos trabajos container
+// ======== Ultimos trabajos container ========
 
 .ultimos-trabajos-fluid {
 	padding: $spacer*4 0;
@@ -198,11 +237,27 @@ div.social1.container {
 }
 
 
+
+
 // ==========================================
 // ============ Pages templates =============
+// ==========================================
+
+
+
 
 
 .page-title {
 	margin-bottom: 1*$spacer;
 	color: $gray-light;
 }
+
+.all-pages-footer {
+	padding-bottom:$spacer *2;
+}
+
+.texto-lider {
+	padding-top: $spacer*5;
+}
+
+

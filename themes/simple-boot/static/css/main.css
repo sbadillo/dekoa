@@ -4,6 +4,13 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+footer {
+  height: auto;
+  padding: 1rem 0;
+  background-color: #474e5d;
+  color: #eceeef;
+  line-height: 1rem; }
+
 .bg-2 {
   background-color: #474e5d;
   /* Dark Blue */
@@ -11,6 +18,14 @@
 
 .small-logo {
   height: 40px; }
+
+.rojito-right > p {
+  border-right: 0.33333rem dotted #e31d1a;
+  padding-right: 1rem; }
+
+.rojito-left > p {
+  border-left: 0.33333rem dotted #e31d1a;
+  padding-left: 1rem; }
 
 .jumbotron.jumbotron-fluid {
   margin-bottom: 0px;
@@ -103,10 +118,6 @@ div.social1.container {
 .carousel-caption {
   top: 60%; }
 
-.border {
-  border: 1px solid orange;
-  z-index: 9999; }
-
 .text-shadow {
   text-shadow: 1px 2px 3px rgba(1, 1, 1, 0.4); }
 
@@ -123,6 +134,12 @@ div.social1.container {
 .page-title {
   margin-bottom: 1rem;
   color: #636c72; }
+
+.all-pages-footer {
+  padding-bottom: 2rem; }
+
+.texto-lider {
+  padding-top: 5rem; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
