@@ -131,6 +131,9 @@ div.social1.container {
   max-width: 750px;
   width: 100%; }
 
+.page-content.container {
+  max-width: 800px; }
+
 .page-title {
   margin-bottom: 1rem;
   color: #636c72; }

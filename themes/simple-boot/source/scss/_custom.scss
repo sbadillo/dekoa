@@ -231,7 +231,7 @@ div.social1.container {
 	background-color: $gray-lighter;	
 }
 
-.ultimos-trabajos-wrapper{
+.ultimos-trabajos-wrapper {
 	max-width: 750px;
 	width: 100%;
 }
@@ -243,8 +243,9 @@ div.social1.container {
 // ============ Pages templates =============
 // ==========================================
 
-
-
+.page-content.container {
+	max-width: 800px;
+}
 
 
 .page-title {
