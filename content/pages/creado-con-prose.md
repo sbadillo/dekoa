@@ -16,9 +16,9 @@ Por ejemplo, vamos a crear una nueva pagina titulada "Novedades". Escrivimos al 
 
 2. Ahora dejamos una linea en blanco y comensamos a escrivir el contenido de nuestra página o artículo. Lo fácil de Markdown es que tiene varios trucos para dar formato a nuestro texto. Aqui estan los mas comunes:
 
-Para escribir un titulo usamos el simbolo '#', un subsititulo de primer nivel se escribe '##', uno de tercer nivel '###' y asi sucesivamente: ejemplo:
+Para escribir un titulo usamos el simbolo '#', un subtitulo de primer nivel se escribe '##', uno de tercer nivel '###' y asi sucesivamente: ejemplo:
 
-Ejemplo:
+## Contenido: Titulos, subtitulos y cursivas y negritas
 
 		# Nueva linea comercial
         
@@ -26,13 +26,13 @@ Ejemplo:
 		
         ## Productos para el Hogar
         
-        Nuestros productos para el hogar combinan diseño con funcionalidad. Ven y descubre nuestros productos que haran de tu espacio un lugar más agradable. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.  
+        Nuestros productos para el hogar combinan diseño con funcionalidad. Ven y descubre nuestros productos que haran de tu espacio un lugar más agradable. En markdown tambien podemos acer *cursivas* y **negritas** rapiamente.
         
         ## Productos para la Oficina
         
         La gamma empresarial se enfoca en rendimiento y comodidad. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+# Links
+los links se escriven en el siguiente formato: 
 		
-
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+        [Texto Visible en el Link](http://www.direccion-del-link.com).
