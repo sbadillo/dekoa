@@ -30,7 +30,7 @@ Para escribir un titulo usamos el simbolo '#', un subtitulo de primer nivel se e
         
         ## Productos para la Oficina
         
-        La gamma empresarial se enfoca en rendimiento y comodidad. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        La gamma empresarial se enfoca en rendimiento y comodidad. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Texto relleno: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 # Links
 los links se escriven en el siguiente formato: 
