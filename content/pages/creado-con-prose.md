@@ -18,5 +18,4 @@ Todo se escrive en un simple texto de formato "Markdown". Escribir en markdown e
 
 imagenes insertadas con html normalmente para poder controlar mejor tamaño, etc:
 
-<img src="./images/logo_dekoa_red_550.png" style="width: 100px">
-
+<img src="../images/logo_dekoa_red_550.png" style="width: 100px">
