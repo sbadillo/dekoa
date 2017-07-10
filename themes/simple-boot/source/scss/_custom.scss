@@ -70,6 +70,16 @@ footer {
 
 // textos
 
+.container.texto-lider {
+	max-width: 750px; 
+
+}
+
+.texto-lider  {
+	margin: 3rem;
+}
+
+
 .rojito-right > p {
 	border-right:$spacer/3 dotted $color-red-dekoa;
 	padding-right:$spacer;
@@ -105,6 +115,7 @@ footer {
 
 .conoce-mas-container {
 	background-color: $color-river-bed;
+	margin-bottom: 7rem;
 }
 
 .conoce-mas {
@@ -247,7 +258,6 @@ div.social1.container {
 	max-width: 800px;
 }
 
-
 .page-title {
 	margin-bottom: 1*$spacer;
 	color: $gray-light;
@@ -256,9 +266,4 @@ div.social1.container {
 .all-pages-footer {
 	padding-bottom:$spacer *2;
 }
-
-.texto-lider {
-	padding-top: $spacer*5;
-}
-
 

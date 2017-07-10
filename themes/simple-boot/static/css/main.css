@@ -19,6 +19,12 @@ footer {
 .small-logo {
   height: 40px; }
 
+.container.texto-lider {
+  max-width: 750px; }
+
+.texto-lider {
+  margin: 3rem; }
+
 .rojito-right > p {
   border-right: 0.33333rem dotted #e31d1a;
   padding-right: 1rem; }
@@ -37,7 +43,8 @@ footer {
   display: flex; }
 
 .conoce-mas-container {
-  background-color: #474e5d; }
+  background-color: #474e5d;
+  margin-bottom: 7rem; }
 
 .conoce-mas {
   line-height: 4.8;
@@ -140,9 +147,6 @@ div.social1.container {
 
 .all-pages-footer {
   padding-bottom: 2rem; }
-
-.texto-lider {
-  padding-top: 5rem; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
