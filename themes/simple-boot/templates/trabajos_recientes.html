@@ -2,9 +2,10 @@
 
 	<div class="jcarousel">
 		<ul>
-			{% for item in ULTIMOS_TRABAJOS[1:] %}
+			{% for item in ULTIMOS_TRABAJOS[:] %}
 			<li>
-				<img data-src="./images/ultimos_trabajos/{{ item }}" alt="">
+				<!-- <img data-src="./images/ultimos_trabajos/{{ item }}" alt=""> -->
+				<img src="./images/ultimos_trabajos/{{ item }}" alt="">
 			</li>
 			{% endfor %}
 		</ul>

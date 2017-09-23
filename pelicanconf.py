@@ -9,6 +9,7 @@ TIMEZONE = 'Europe/Paris'
 AUTHOR = u'sb'
 SITENAME = u'Dekoa'
 
+
 SITEURL = ''  # empty, see publishconf.py for publishing config
 print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
 
