@@ -1,0 +1,19 @@
+Folder de Últimos trabajos
+=====
+
+Las imágenes que esten presentes en este folder
+serán mostradas en la seccion "Ultimos trabajos"
+de la página principal de Dekoa. Las imagenes desfilaran 
+en modo tira de imagenes, o "carrousel".
+
+Requisitos de las imágenes:
+
+- Que sean de formato .jpg (no .png, .gif)
+- Que sean exactamente cuadradas. (no obligatorio)
+- Que muestren trabajos reales, en lugares reales.
+
+El orden es dictado simplemente por el nombre.
+
+Para no hacer la tira de imágenes muy larga, 
+fotos viejas se pueden ir guardando periodicamente
+en el folder "Antiguas". Estas fotos permaneceran escondidas.
